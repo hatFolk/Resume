@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{hyperref}
+
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Linux Libertine} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-1in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{5cm} % Adjust the text height - less whitespace at the bottom of the page
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\textwidth}{2in}
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=10.0}\fontsize{10}{10}\selectfont % Letter spacing and font size
+ 
+7811 Kalorama RD {\large\textperiodcentered} Annandale {\large\textperiodcentered} Virginia 22003\\ % Your mailing address
+{\Large\Letter} LVKDinh@gmail.com \ {\Large\Telefon} (703) 462-4217 \\ % Your email address and phone number
+Github \ \url{https://github.com/hatFolk} \\
+LinkedIn \ \url{https://linkedin.com/in/LilasVKDinh/}\\
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Lilas VK Dinh} % Your name at the top
+
+US Citizen
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{My Objective}
+
+To get an internship as a software engineer\\
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray University & \textbf{George Mason University}\\
+\gray Degree & \textbf{Bachelor of Science in Computer Science} \hfill Fairfax, VA\\
+\gray GPA | Major GPA & 3.37 | 3.79 \hfill \textbf{Fall 2012 --- Expected Spring 2016}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Employer & \textbf{George Mason University, CS Department}\hfill{\textbf{Undergraduate Teaching Assistant}}\\
+\gray Class & \textbf{Introduction to Low-Level Programming}\hfill{C}\\
+\gray Period & \hfill Spring 2014 - Current\\
+Responsibilities & Assistant teaching and answering questions about Linux, Vim, and C with respect to hardware. I maintain lab sections and write bash scripts for grading.\\
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Class & \textbf{Object Oriented Programming}\hfill{Java}\\
+Responsibilities & Assistant taught, maintained labs, created a test suite for, and answered questions on Test Driven Development, Java, and programming. Created supplemental resources: \url{https://github.com/hatFolk/cs211}\\
+\end{tabularx}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Class & \textbf{Introduction to Computer Programming}\hfill{Python}\\
+\gray Honors & Outstanding Undergraduate Teaching Assistant award for Spring 2014.\\
+Responsibilities & Assistant taught, maintained labs and office hours, and answered questions on Test Driven Developement, Python, Programming, and Programming Logic. Created supplemental resources: \url{https://github.com/hatFolk/CS112-S2014/wiki}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects and Activities}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray \textbf{Intro to FP} & A Scheme class I taught \hfill{Volunteer Instructor}\\
+\gray Link & \url{http://youtu.be/_8X-HO2Dpc0} \hfill Winter 2014\\
+& Organized and taught Scheme to promote Functional and Recursive thinking. Also taught Emacs and various topics.
+\end{tabularx}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray \textbf{HTS} & An Automatic Quizzing Program written in Python \hfill{Developer}\\
+\gray Link & \url{https://github.com/hatFolk/human_testing_suite} \hfill Spring 2013\\
+& A Python library to create an interactive and customizable quiz taking environment.
+\end{tabularx}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray \textbf{Patriot Hackers} & A Cyber Security Student Organization \hfill{Secretary}\\
+\gray Link & \url{https://patriothackers.org} \hfill since Spring 2013\\
+& We are an organization that teaches ethical cyber security, training and preparing members to take a Certified Ethical Hacker course.
+\end{tabularx}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray \textbf{MasonLUG} & George Mason University's Linux User Group \hfill{Speaking Member}\\
+\gray Link & \url{https://gmulug.com} \hfill since Spring 2013\\
+& We are an organization that promotes Linux and related topics. I give talks at the organization.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, Java, C, Racket, Common Lisp, Bash, \LaTeX\\
+Tools & Git, Vim, Emacs, Eclipse, IntelliJ, Unix, TDD\\
+Operating Systems & Linux Mint, Ubuntu, Debian, Gentoo, Windows 7\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
